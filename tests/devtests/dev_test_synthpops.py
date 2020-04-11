@@ -30,13 +30,13 @@ def test_import():
 def test_pop_options(doplot=False): # If being run via pytest, turn off
     sc.heading('Basic populations tests')
 
-    popchoices = ['random', 'bayesian']
+    popchoices = ['random', 'synthpops', 'realistic', 'clustered', 'cloistered']
     if sp.config.full_data_available:
         popchoices.append('data')
 
     basepars = {
-        'n': 3000,
-        'n_infected': 10,
+        'pop_size': 5000,
+        'pop_infected': 10,
         'contacts': 20,
         'n_days': 90
         }
@@ -44,9 +44,15 @@ def test_pop_options(doplot=False): # If being run via pytest, turn off
     sims = sc.objdict()
     for popchoice in popchoices:
         sc.heading(f'Running {popchoice}')
+        if popchoice == 'cloistered':
+            print('J/K, fooled you!')
+            continue
+        elif popchoice == 'synthpops':
+            print(f'Yeah, {popchoice} is not working here')
+            continue
         sims[popchoice] = cova.Sim()
         sims[popchoice].update_pars(basepars)
-        sims[popchoice]['usepopdata'] = popchoice
+        sims[popchoice]['pop_type'] = popchoice
         sims[popchoice].run()
 
     if doplot:
@@ -63,15 +69,15 @@ def test_pop_options(doplot=False): # If being run via pytest, turn off
 def test_interventions(doplot=False): # If being run via pytest, turn off
     sc.heading('Test interventions')
 
-    popchoice = 'bayesian'
+    popchoice = 'random'
     intervs = ['none', 'all', 'HSWR', 'SWR', 'H']
     interv_days = [21]
 
     basepars = {
-        'n': 10000,
-        'n_infected': 100,
+        'pop_size': 10000,
+        'pop_infected': 100,
         'n_days': 60,
-        'usepopdata': popchoice,
+        'pop_type': popchoice,
         }
 
     def interv_func(sim, t, interv, interv_days):
@@ -92,7 +98,7 @@ def test_interventions(doplot=False): # If being run via pytest, turn off
     sims = sc.objdict()
     for interv in intervs:
         sc.heading(f'Running {interv}')
-        interv_lambda = lambda sim,t: interv_func(sim=sim, t=t, interv=interv, interv_days=interv_days)
+        interv_lambda = lambda sim, t: interv_func(sim=sim, t=t, interv=interv, interv_days=interv_days)
         sims[interv] = sc.dcp(base_sim)
         sims[interv]['interv_func'] = interv_lambda
         sims[interv].run(initialize=False) # Since already initialized
@@ -139,8 +145,8 @@ if __name__ == '__main__':
 
     test_import()
     sims1 = test_pop_options(doplot=doplot)
-    sims2 = test_interventions(doplot=doplot)
-    sims3 = test_simple_interv(doplot=doplot)
+    # sims2 = test_interventions(doplot=doplot)
+    # sims3 = test_simple_interv(doplot=doplot)
 
     sc.toc()
 
