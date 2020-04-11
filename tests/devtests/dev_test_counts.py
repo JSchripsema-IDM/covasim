@@ -5,53 +5,6 @@ Check if states match
 import sciris as sc
 import covasim as cv
 
-def verify_exposed(p):
-    assert p.exposed
-    assert not p.susceptible
-
-def verify_infectious(p):
-    assert p.infectious
-    verify_exposed(p)
-    pass
-
-def verify_symptomatic(p):
-    assert p.symptomatic
-    verify_infectious(p)
-    pass
-
-def verify_severe(p):
-    assert p.severe
-    verify_symptomatic(p)
-    pass
-
-def verify_critical(p):
-    assert p.critical
-    verify_severe(p)
-    pass
-
-def verify_dead(p):
-    assert not p.susceptible
-    assert not p.exposed
-    assert not p.infectious
-    assert not p.symptomatic
-    assert not p.infectious
-    assert not p.severe
-    assert not p.critical
-    assert not p.recovered
-    assert p.dead
-    pass
-
-def verify_susceptible(p):
-    assert p.susceptible
-    assert not p.exposed
-    assert not p.infectious
-    assert not p.symptomatic
-    assert not p.infectious
-    assert not p.severe
-    assert not p.critical
-    assert not p.recovered
-    assert not p.dead
-
 states = [
         'susceptible',
         'exposed',
@@ -63,65 +16,57 @@ states = [
         'diagnosed',
         'recovered',
         'dead',
-]
+] # NOTE: Please keep susceptible first and dead last.
 
 sim = cv.Sim()
 sim.run()
 
 d = sc.objdict()
 for state in states:
-    n_in = len(list(sim.people.filter_in(state)))
+    in_list = list(sim.people.filter_in(state))
+    n_in = len(in_list)
+    if n_in > 0:
+        state_individual = in_list[0]
+        if state == states[0]:  # Treat susceptible special
+            assert getattr(state_individual, states[0])
+            for s in states[1:]:
+                assert not getattr(state_individual, s)
+        elif states.index(state) < states.index('critical') + 1:  # If in progression, have this and all previous states
+            #  print(f"DEBUG: checking state {state}")
+            assert not getattr(state_individual, states[0])  # except susceptible
+            for s in states[1:]:
+                assert getattr(state_individual, s)
+                if s == state:  # we've checked the last one
+                    break
+            pass
+        elif state == 'recovered':  # recovered
+            not_recovered_states = sc.dcp(states)
+            for s in states:
+                if s not in ['tested','diagnosed','recovered']:
+                    assert not getattr(state_individual, s)
+                elif s == 'recovered':
+                    assert getattr(state_individual, s)
+                else:
+                    pass
+                pass
+            pass
+        elif state == states[-1]:  # Assume dead is always last
+            for s in states:
+                if s != state:  # for all states other than dead
+                    assert not getattr(state_individual, s)
+                else:
+                    assert getattr(state_individual, s)
+                    pass
+                pass
+            pass
+        pass
+    else:
+        print(f"NOTE: No individuals found in state {state}, skipping state validation")
+        pass
     n_out = len(list(sim.people.filter_out(state)))
     d[state] = n_in
     assert n_in + n_out == sim['pop_size']
     pass
-
-dead_individual = list(sim.people.filter_in('dead'))[0]
-verify_dead(dead_individual)
-
-critical_people = sim.people.filter_in('critical')
-critical_bill = list(critical_people)[0]
-verify_critical(critical_bill)
-
-severe_people = list(sim.people.filter_in('severe'))
-severe_sally = None
-for p in severe_people:
-    if not p.critical:
-        severe_sally = p
-        break
-verify_severe(severe_sally)
-
-symptomatic_people = list(sim.people.filter_in('symptomatic'))
-symptomatic_shelby = None
-for p in symptomatic_people:
-    if not p.severe:
-        symptomatic_shelby = p
-        break
-verify_symptomatic(symptomatic_shelby)
-
-infectious_people = list(sim.people.filter_in('infectious'))
-infectious_irene = None
-for p in infectious_people:
-    if not p.symptomatic:
-        infectious_irene = p
-        break
-verify_infectious(infectious_irene)
-
-exposed_people = list(sim.people.filter_in('exposed'))
-exposed_edgar = None
-for p in exposed_people:
-    if not p.severe:
-        exposed_edgar = p
-        break
-verify_exposed(exposed_edgar)
-
-susceptible_people = list(sim.people.filter_in('susceptible'))
-susceptible_susan = None
-for p in susceptible_people:
-    if not p.severe:
-        susceptible_susan = p
-        break
-verify_susceptible(susceptible_susan)
 
 print(sim.summary)
 print(d)
