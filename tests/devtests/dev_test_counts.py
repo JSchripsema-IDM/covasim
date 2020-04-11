@@ -4,7 +4,6 @@ Check if states match
 
 import sciris as sc
 import covasim as cv
-from copy import deepcopy
 
 def verify_exposed(p):
     assert p.exposed

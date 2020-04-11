@@ -30,7 +30,7 @@ def test_import():
 def test_pop_options(doplot=False): # If being run via pytest, turn off
     sc.heading('Basic populations tests')
 
-    popchoices = ['random', 'synthpops', 'realistic', 'clustered', 'cloistered']
+    popchoices = ['random', 'realistic', 'clustered']  # TODO: It would be nice to have synthpops as an option here
     if sp.config.full_data_available:
         popchoices.append('data')
 
@@ -44,12 +44,6 @@ def test_pop_options(doplot=False): # If being run via pytest, turn off
     sims = sc.objdict()
     for popchoice in popchoices:
         sc.heading(f'Running {popchoice}')
-        if popchoice == 'cloistered':
-            print('J/K, fooled you!')
-            continue
-        elif popchoice == 'synthpops':
-            print(f'Yeah, {popchoice} is not working here')
-            continue
         sims[popchoice] = cova.Sim()
         sims[popchoice].update_pars(basepars)
         sims[popchoice]['pop_type'] = popchoice
@@ -98,6 +92,8 @@ def test_interventions(doplot=False): # If being run via pytest, turn off
     sims = sc.objdict()
     for interv in intervs:
         sc.heading(f'Running {interv}')
+        print(f"t: {t}")
+        print(f"intervention: {interv}")
         interv_lambda = lambda sim, t: interv_func(sim=sim, t=t, interv=interv, interv_days=interv_days)
         sims[interv] = sc.dcp(base_sim)
         sims[interv]['interv_func'] = interv_lambda
@@ -121,11 +117,11 @@ def test_simple_interv(doplot=False): # If being run via pytest, turn off
         return sim
 
     basepars = {
-        'n':           2000,
-        'n_infected':  100,
-        'n_days':      60,
-        'interv_func': close_schools,
-        'usepopdata':  'bayesian',
+        'pop_size':     2000,
+        'pop_infected': 100,
+        'n_days':       60,
+        'interv_func':  close_schools,
+        'pop_type':  'random',
         }
 
     sim = cova.Sim()
