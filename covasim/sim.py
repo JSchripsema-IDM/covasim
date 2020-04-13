@@ -577,8 +577,35 @@ class Sim(cvbase.BaseSim):
         r_eff = targets[inds]/sources[inds]
         self.results['r_eff'].values[inds] = r_eff
 
+
+        # store the number of people contributing to the r_eff estimate for each daily estimate
+        self.results['r_eff'].weights = np.zeros(self.npts) + np.NaN
+        self.results['r_eff'].weights[inds] = sources[inds]
+
         return
 
+   def compute_avg_r_eff(self, n):
+        """Compute r_eff using n previous days, includes weights for number of sources"""
+
+        # Compute r_eff per day
+        self.compute_r_eff()
+
+        # use stored weights calculate the moving average over the window of timesteps, n
+        num = np.nancumsum(self.results['r_eff'].values * self.results['r_eff'].weights)
+        num[n:] = num[n:] - num[:-n]
+        den = np.nancumsum(self.results['r_eff'].weights)
+        den[n:] = den[n:] - den[:-n]
+
+        # avoid dividing by zero
+        values = np.zeros(num.shape)
+        ind = den > 0
+        values[ind] = num[ind]/den[ind]
+
+        # save results
+        w_reff = cvbase.Result(name='avg_r_eff', values=values)
+        w_reff.n_days = n
+
+        return w_reff
 
     def compute_gen_time(self):
         '''
