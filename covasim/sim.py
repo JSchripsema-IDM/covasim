@@ -584,7 +584,7 @@ class Sim(cvbase.BaseSim):
 
         return
 
-   def compute_avg_r_eff(self, n):
+    def compute_avg_r_eff(self, n):
         """Compute r_eff using n previous days, includes weights for number of sources"""
 
         # Compute r_eff per day
