@@ -1,0 +1,2149 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Package reference &mdash; Covasim  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/tipuesearch/tipuesearch.js"></script>
+        <script src="_static/tipuesearch/tipuesearch_content.js"></script>
+        <script src="_static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="_static/runsearch.js"></script>
+        <script src="_static/tablecollapse.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Covasim  documentation"
+          href="_static/opensearch.xml"/>
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  <link rel="stylesheet" href="_static/tipuesearch/tipuesearch.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="covasim.cruise_ship package" href="covasim.cruise_ship.html" />
+    <link rel="prev" title="Run tests" href="tests.html" />
+
+<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans" rel="stylesheet">
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Covasim
+          
+
+          
+            
+            <img src="_static/IDM_white.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          <div role="search">
+    <form action="search-local.html" class='wy-form' id='rtd-search-form' method="get">
+        <input autocomplete="off" id="tipue_search_input" name="q" placeholder="Search docs"
+               required type="text">
+    </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation and setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Using Covasim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Run tests</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Package reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="covasim.cruise_ship.html">covasim.cruise_ship package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="covasim.data.html">covasim.data package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="covasim.webapp.html">covasim.webapp package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="parameters.html">Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to Covasim</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Covasim</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+<div aria-label="breadcrumbs navigation" role="navigation">
+    <ul class="wy-breadcrumbs">
+        <li><a href="https://www.idmod.org/documentation">IDM docs</a> &raquo;</li>
+        <li><a href="index.html">Covasim</a> &raquo;</li>
+        
+        <li>Package reference</li>
+        <li class="wy-breadcrumbs-aside">
+            
+            
+            
+        </li>
+    </ul>
+    <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+<!-- From _templates/page.html -->
+
+  <div class="section" id="package-reference">
+<h1>Package reference<a class="headerlink" href="#package-reference" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#subpackages" id="id1">Subpackages</a></p></li>
+<li><p><a class="reference internal" href="#covasim-submodules" id="id2">covasim submodules</a></p>
+<ul>
+<li><p><a class="reference internal" href="#module-covasim.base" id="id3">covasim.base module</a></p></li>
+<li><p><a class="reference internal" href="#module-covasim.defaults" id="id4">covasim.defaults module</a></p></li>
+<li><p><a class="reference internal" href="#module-covasim.interventions" id="id5">covasim.interventions module</a></p></li>
+<li><p><a class="reference internal" href="#module-covasim.misc" id="id6">covasim.misc module</a></p></li>
+<li><p><a class="reference internal" href="#module-covasim.parameters" id="id7">covasim.parameters module</a></p></li>
+<li><p><a class="reference internal" href="#module-covasim.people" id="id8">covasim.people module</a></p></li>
+<li><p><a class="reference internal" href="#module-covasim.population" id="id9">covasim.population module</a></p></li>
+<li><p><a class="reference internal" href="#module-covasim.requirements" id="id10">covasim.requirements module</a></p></li>
+<li><p><a class="reference internal" href="#module-covasim.run" id="id11">covasim.run module</a></p></li>
+<li><p><a class="reference internal" href="#module-covasim.sim" id="id12">covasim.sim module</a></p></li>
+<li><p><a class="reference internal" href="#module-covasim.utils" id="id13">covasim.utils module</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="subpackages">
+<h2><a class="toc-backref" href="#id1">Subpackages</a><a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="covasim.cruise_ship.html">covasim.cruise_ship package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="covasim.cruise_ship.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="covasim.cruise_ship.html#module-covasim.cruise_ship.model">covasim.cruise_ship.model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="covasim.cruise_ship.html#module-covasim.cruise_ship.parameters">covasim.cruise_ship.parameters module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="covasim.cruise_ship.html#module-covasim.cruise_ship.test_cruise_sim">covasim.cruise_ship.test_cruise_sim module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="covasim.data.html">covasim.data package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="covasim.data.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="covasim.data.html#module-covasim.data.country_age_distributions">covasim.data.country_age_distributions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="covasim.data.html#module-covasim.data.loaders">covasim.data.loaders module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="covasim.data.html#module-covasim.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="covasim.webapp.html">covasim.webapp package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="covasim.webapp.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="covasim.webapp.html#module-covasim.webapp.cova_app">covasim.webapp.cova_app module</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="covasim-submodules">
+<h2><a class="toc-backref" href="#id2">covasim submodules</a><a class="headerlink" href="#covasim-submodules" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-covasim.base">
+<span id="covasim-base-module"></span><h3><a class="toc-backref" href="#id3">covasim.base module</a><a class="headerlink" href="#module-covasim.base" title="Permalink to this headline">¶</a></h3>
+<p>Base classes for Covasim.</p>
+<dl class="py class">
+<dt id="covasim.base.ParsObj">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.base.</code><code class="sig-name descname">ParsObj</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pars</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.ParsObj" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sciris.sc_utils.prettyobj</span></code></p>
+<p>A class based around performing operations on a self.pars dict.</p>
+<dl class="py method">
+<dt id="covasim.base.ParsObj.update_pars">
+<code class="sig-name descname">update_pars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pars</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">create</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.ParsObj.update_pars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update internal dict with new pars.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pars</strong> (<em>dict</em>) – the parameters to update (if None, do nothing)</p></li>
+<li><p><strong>create</strong> (<em>bool</em>) – if create is False, then raise a KeyError if the key does not already exist</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="covasim.base.Result">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.base.</code><code class="sig-name descname">Result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">values</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">npts</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">scale</span><span class="o">=</span><span class="default_value">'dynamic'</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.Result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Stores a single result – by default, acts like an array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – name of this result, e.g. new_infections</p></li>
+<li><p><strong>values</strong> (<em>array</em>) – array of values corresponding to this result</p></li>
+<li><p><strong>npts</strong> (<em>int</em>) – if values is None, precreate it to be of this length</p></li>
+<li><p><strong>scale</strong> (<em>str</em>) – whether or not the value scales by population size; options are “dynamic”, “static”, or False</p></li>
+<li><p><strong>color</strong> (<em>str</em><em> or </em><em>array</em>) – default color for plotting (hex or RGB notation)</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">covasim</span> <span class="k">as</span> <span class="nn">cv</span>
+<span class="n">r1</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">Result</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;test1&#39;</span><span class="p">,</span> <span class="n">npts</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">r1</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r2</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="n">r2</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">Result</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;test2&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r2</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt id="covasim.base.Result.npts">
+<em class="property">property </em><code class="sig-name descname">npts</code><a class="headerlink" href="#covasim.base.Result.npts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="covasim.base.BaseSim">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.base.</code><code class="sig-name descname">BaseSim</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BaseSim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#covasim.base.ParsObj" title="covasim.base.ParsObj"><code class="xref py py-class docutils literal notranslate"><span class="pre">covasim.base.ParsObj</span></code></a></p>
+<p>The BaseSim class handles the running of the simulation: the number of people,
+number of time points, and the parameters of the simulation.</p>
+<dl class="py method">
+<dt id="covasim.base.BaseSim.set_seed">
+<code class="sig-name descname">set_seed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">seed</span><span class="o">=</span><span class="default_value">- 1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BaseSim.set_seed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the seed for the random number stream from the stored or supplied value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>seed</strong> (<em>None</em><em> or </em><em>int</em>) – if no argument, use current seed; if None, randomize; otherwise, use and store supplied seed</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BaseSim.n">
+<em class="property">property </em><code class="sig-name descname">n</code><a class="headerlink" href="#covasim.base.BaseSim.n" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count the number of people – if it fails, assume none</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BaseSim.npts">
+<em class="property">property </em><code class="sig-name descname">npts</code><a class="headerlink" href="#covasim.base.BaseSim.npts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count the number of time points</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BaseSim.tvec">
+<em class="property">property </em><code class="sig-name descname">tvec</code><a class="headerlink" href="#covasim.base.BaseSim.tvec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a time vector</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BaseSim.datevec">
+<em class="property">property </em><code class="sig-name descname">datevec</code><a class="headerlink" href="#covasim.base.BaseSim.datevec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a vector of dates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Array of <cite>datetime</cite> instances containing the date associated with each
+simulation time step</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BaseSim.inds2dates">
+<code class="sig-name descname">inds2dates</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inds</span></em>, <em class="sig-param"><span class="n">dateformat</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BaseSim.inds2dates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a set of indices to a set of dates</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BaseSim.result_keys">
+<code class="sig-name descname">result_keys</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BaseSim.result_keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the actual results objects, not other things stored in sim.results</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BaseSim.layer_keys">
+<code class="sig-name descname">layer_keys</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BaseSim.layer_keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the available contact keys – set by beta_layer rather than contacts since only the former is required</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BaseSim.to_json">
+<code class="sig-name descname">to_json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">keys</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tostring</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">indent</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BaseSim.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export results as JSON.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em>) – if None, return string; else, write to file</p></li>
+<li><p><strong>keys</strong> (<em>str</em><em> or </em><em>list</em>) – attributes to write to json (default: results, parameters, and summary)</p></li>
+<li><p><strong>tostring</strong> (<em>bool</em>) – if not writing to file, whether to write to string (alternative is sanitized dictionary)</p></li>
+<li><p><strong>indent</strong> (<em>int</em>) – if writing to file, how many indents to use per nested level</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – detail to print</p></li>
+<li><p><strong>args</strong> (<em>list</em>) – passed to savejson()</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – passed to savejson()</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A unicode string containing a JSON representation of the results,
+or writes the JSON file to disk</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>string = sim.to_json()
+sim.to_json(‘results.json’)
+sim.to_json(‘summary.json’, keys=’summary’)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BaseSim.to_excel">
+<code class="sig-name descname">to_excel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BaseSim.to_excel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export results as XLSX</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – if None, return string; else, write to file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An sc.Spreadsheet with an Excel file, or writes the file to disk</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BaseSim.shrink">
+<code class="sig-name descname">shrink</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">skip_attrs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">in_place</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BaseSim.shrink" title="Permalink to this definition">¶</a></dt>
+<dd><p>“Shrinks” the simulation by removing the people, and returns
+a copy of the “shrunken” simulation. Used to reduce the memory required
+for saved files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>skip_attrs</strong> (<em>list</em>) – a list of attributes to skip in order to perform the shrinking; default “people”</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a Sim object with the listed attributes removed</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>shrunken_sim (<a class="reference internal" href="covasim.cruise_ship.html#covasim.cruise_ship.model.Sim" title="covasim.cruise_ship.model.Sim">Sim</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BaseSim.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">keep_population</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">skip_attrs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BaseSim.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save to disk as a gzipped pickle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em><em> or </em><em>None</em>) – the name or path of the file to save to; if None, uses stored</p></li>
+<li><p><strong>kwargs</strong> – passed to makefilepath()</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the validated absolute path to the saved file</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>filename (str)</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sim</span><span class="o">.</span><span class="n">save</span><span class="p">()</span> <span class="c1"># Saves to a .sim file with the date and time of creation by default</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BaseSim.load">
+<em class="property">static </em><code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BaseSim.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load from disk from a gzipped pickle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em>) – the name or path of the file to save to</p></li>
+<li><p><strong>keywords</strong> – passed to makefilepath()</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the loaded simulation object</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>sim (<a class="reference internal" href="covasim.cruise_ship.html#covasim.cruise_ship.model.Sim" title="covasim.cruise_ship.model.Sim">Sim</a>)</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sim</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">Sim</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;my-simulation.sim&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="covasim.base.BasePeople">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.base.</code><code class="sig-name descname">BasePeople</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pars</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">pop_size</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sciris.sc_utils.prettyobj</span></code></p>
+<p>A class to handle all the boilerplate for people – note that everything
+interesting happens in the People class.</p>
+<dl class="py method">
+<dt id="covasim.base.BasePeople.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key</span></em>, <em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">die</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ensure sizes and dtypes match</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience method</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.true">
+<code class="sig-name descname">true</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return indices matching the condition</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.false">
+<code class="sig-name descname">false</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return indices not matching the condition</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.count">
+<code class="sig-name descname">count</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count the number of people for a given key</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.keys">
+<code class="sig-name descname">keys</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">which</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the name of the states</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.layer_keys">
+<code class="sig-name descname">layer_keys</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.layer_keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the available contact keys – set by beta_layer rather than contacts since only the former is required</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.index">
+<code class="sig-name descname">index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>The indices of the array</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.validate">
+<code class="sig-name descname">validate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">die</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.validate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.resize">
+<code class="sig-name descname">resize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pop_size</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">keys</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.resize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resize arrays if any mismatches are found</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.to_df">
+<code class="sig-name descname">to_df</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.to_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert to a Pandas dataframe</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.to_arr">
+<code class="sig-name descname">to_arr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.to_arr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return as numpy array</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.person">
+<code class="sig-name descname">person</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ind</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.person" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create person from the people</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.to_people">
+<code class="sig-name descname">to_people</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.to_people" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all people as a list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.from_people">
+<code class="sig-name descname">from_people</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">people</span></em>, <em class="sig-param"><span class="n">resize</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.from_people" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a list of people back into a People object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.init_contacts">
+<code class="sig-name descname">init_contacts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">reset</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.init_contacts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the contacts dataframe with the correct columns and data types</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.add_contacts">
+<code class="sig-name descname">add_contacts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">contacts</span></em>, <em class="sig-param"><span class="n">key</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">beta</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.add_contacts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add new contacts to the array</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.make_edgelist">
+<code class="sig-name descname">make_edgelist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">contacts</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.make_edgelist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a list of people with a list of contacts per person and turn it
+into an edge list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.remove_duplicates">
+<em class="property">static </em><code class="sig-name descname">remove_duplicates</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">df</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.remove_duplicates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sort the dataframe and remove duplicates</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.base.BasePeople.remove_dynamic_contacts">
+<code class="sig-name descname">remove_dynamic_contacts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dynamic_keys</span><span class="o">=</span><span class="default_value">'c'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.BasePeople.remove_dynamic_contacts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove all contacts labeled as dynamic</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="covasim.base.Person">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.base.</code><code class="sig-name descname">Person</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pars</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">uid</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">age</span><span class="o">=</span><span class="default_value">- 1</span></em>, <em class="sig-param"><span class="n">sex</span><span class="o">=</span><span class="default_value">- 1</span></em>, <em class="sig-param"><span class="n">contacts</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.Person" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sciris.sc_utils.prettyobj</span></code></p>
+<p>Class for a single person. Note: this is largely deprecated since sim.people
+is now based on arrays rather than being a list of people.</p>
+<dl class="py attribute">
+<dt id="covasim.base.Person.infected">
+<code class="sig-name descname">infected</code><em class="property"> = None</em><a class="headerlink" href="#covasim.base.Person.infected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Record the UIDs of all people this person infected</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="covasim.base.Person.infected_by">
+<code class="sig-name descname">infected_by</code><em class="property"> = None</em><a class="headerlink" href="#covasim.base.Person.infected_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store the UID of the person who caused the infection. If None but person is infected, then it was an externally seeded infection</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="covasim.base.TransTree">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.base.</code><code class="sig-name descname">TransTree</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pop_size</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sources</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">targets</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.TransTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sciris.sc_utils.prettyobj</span></code></p>
+<p>A class for holding a transmission tree. Sources and targets are both lists
+of the same length as the population size. Sources has one entry for people who
+have been infected, zero for those who haven’t. Targets is a list of lists,
+with the length of the list being the number of people that person infected.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sources</strong> (<em>list</em>) – the person who infected this person</p></li>
+<li><p><strong>targets</strong> (<em>list</em>) – the people this person infected</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="covasim.base.TransTree.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.base.TransTree.plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-covasim.defaults">
+<span id="covasim-defaults-module"></span><h3><a class="toc-backref" href="#id4">covasim.defaults module</a><a class="headerlink" href="#module-covasim.defaults" title="Permalink to this headline">¶</a></h3>
+<p>Set the defaults across each of the different files.</p>
+<dl class="py class">
+<dt id="covasim.defaults.PeopleKeys">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.defaults.</code><code class="sig-name descname">PeopleKeys</code><a class="headerlink" href="#covasim.defaults.PeopleKeys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sciris.sc_utils.prettyobj</span></code></p>
+<p>For storing all the keys relating to a person and people</p>
+<dl class="py attribute">
+<dt id="covasim.defaults.PeopleKeys.person">
+<code class="sig-name descname">person</code><em class="property"> = ['uid', 'age', 'sex', 'symp_prob', 'severe_prob', 'crit_prob', 'death_prob', 'rel_trans', 'rel_sus']</em><a class="headerlink" href="#covasim.defaults.PeopleKeys.person" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="covasim.defaults.PeopleKeys.states">
+<code class="sig-name descname">states</code><em class="property"> = ['susceptible', 'exposed', 'infectious', 'symptomatic', 'severe', 'critical', 'tested', 'diagnosed', 'recovered', 'dead', 'known_contact', 'quarantined']</em><a class="headerlink" href="#covasim.defaults.PeopleKeys.states" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="covasim.defaults.PeopleKeys.dates">
+<code class="sig-name descname">dates</code><em class="property"> = ['date_susceptible', 'date_exposed', 'date_infectious', 'date_symptomatic', 'date_severe', 'date_critical', 'date_tested', 'date_diagnosed', 'date_recovered', 'date_dead', 'date_known_contact', 'date_quarantined', 'date_end_quarantine']</em><a class="headerlink" href="#covasim.defaults.PeopleKeys.dates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="covasim.defaults.PeopleKeys.durs">
+<code class="sig-name descname">durs</code><em class="property"> = ['dur_exp2inf', 'dur_inf2sym', 'dur_sym2sev', 'dur_sev2crit', 'dur_disease']</em><a class="headerlink" href="#covasim.defaults.PeopleKeys.durs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="covasim.defaults.PeopleKeys.all_states">
+<code class="sig-name descname">all_states</code><em class="property"> = ['uid', 'age', 'sex', 'symp_prob', 'severe_prob', 'crit_prob', 'death_prob', 'rel_trans', 'rel_sus', 'susceptible', 'exposed', 'infectious', 'symptomatic', 'severe', 'critical', 'tested', 'diagnosed', 'recovered', 'dead', 'known_contact', 'quarantined', 'date_susceptible', 'date_exposed', 'date_infectious', 'date_symptomatic', 'date_severe', 'date_critical', 'date_tested', 'date_diagnosed', 'date_recovered', 'date_dead', 'date_known_contact', 'date_quarantined', 'date_end_quarantine', 'dur_exp2inf', 'dur_inf2sym', 'dur_sym2sev', 'dur_sev2crit', 'dur_disease']</em><a class="headerlink" href="#covasim.defaults.PeopleKeys.all_states" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="covasim.defaults.PeopleKeys.contacts">
+<code class="sig-name descname">contacts</code><em class="property"> = {'beta': &lt;class 'numpy.float32'&gt;, 'layer': None, 'p1': &lt;class 'numpy.int32'&gt;, 'p2': &lt;class 'numpy.int32'&gt;}</em><a class="headerlink" href="#covasim.defaults.PeopleKeys.contacts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-covasim.interventions">
+<span id="covasim-interventions-module"></span><h3><a class="toc-backref" href="#id5">covasim.interventions module</a><a class="headerlink" href="#module-covasim.interventions" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt id="covasim.interventions.Intervention">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.interventions.</code><code class="sig-name descname">Intervention</code><a class="headerlink" href="#covasim.interventions.Intervention" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract class for interventions</p>
+<dl class="py attribute">
+<dt id="covasim.interventions.Intervention.results">
+<code class="sig-name descname">results</code><em class="property"> = None</em><a class="headerlink" href="#covasim.interventions.Intervention.results" title="Permalink to this definition">¶</a></dt>
+<dd><p>All interventions are guaranteed to have results, so <cite>Sim</cite> can safely iterate over this dict</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.interventions.Intervention.apply">
+<code class="sig-name descname">apply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.Intervention.apply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply intervention</p>
+<p>Function signature matches existing intervention definition
+This method gets called at each timestep and must be implemented
+by derived classes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> – </p></li>
+<li><p><strong>sim</strong> – The Sim instance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.interventions.Intervention.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em>, <em class="sig-param"><span class="n">ax</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.Intervention.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call function during plotting</p>
+<p>This can be used to do things like add vertical lines on days when interventions take place</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sim</strong> – the Sim instance</p></li>
+<li><p><strong>ax</strong> – the axis instance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.interventions.Intervention.to_json">
+<code class="sig-name descname">to_json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.Intervention.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return JSON-compatible representation</p>
+<p>Custom classes can’t be directly represented in JSON. This method is a
+one-way export to produce a JSON-compatible representation of the
+intervention. In the first instance, the object dict will be returned.
+However, if an intervention itself contains non-standard variables as
+attributes, then its <cite>to_json</cite> method will need to handle those</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>JSON-serializable representation (typically a dict, but could be anything else)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="covasim.interventions.dynamic_pars">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.interventions.</code><code class="sig-name descname">dynamic_pars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pars</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.dynamic_pars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#covasim.interventions.Intervention" title="covasim.interventions.Intervention"><code class="xref py py-class docutils literal notranslate"><span class="pre">covasim.interventions.Intervention</span></code></a></p>
+<p>A generic intervention that modifies a set of parameters at specified points
+in time.</p>
+<p>The intervention takes a single argument, pars, which is a dictionary of which
+parameters to change, with following structure: keys are the parameters to change,
+then subkeys ‘days’ and ‘vals’ are either a scalar or list of when the change(s)
+should take effect and what the new value should be, respectively.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pars</strong> (<em>dict</em>) – described above</p>
+</dd>
+</dl>
+<p><strong>Examples</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">interv</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">dynamic_pars</span><span class="p">({</span><span class="s1">&#39;diag_factor&#39;</span><span class="p">:{</span><span class="s1">&#39;days&#39;</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;vals&#39;</span><span class="p">:</span><span class="mf">0.5</span><span class="p">},</span> <span class="s1">&#39;cont_factor&#39;</span><span class="p">:{</span><span class="s1">&#39;days&#39;</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;vals&#39;</span><span class="p">:</span><span class="mf">0.5</span><span class="p">}})</span> <span class="c1"># Starting day 30, make diagnosed people and people with contacts half as likely to transmit</span>
+<span class="n">interv</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">dynamic_pars</span><span class="p">({</span><span class="s1">&#39;beta&#39;</span><span class="p">:{</span><span class="s1">&#39;days&#39;</span><span class="p">:[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">28</span><span class="p">],</span> <span class="s1">&#39;vals&#39;</span><span class="p">:[</span><span class="mf">0.005</span><span class="p">,</span> <span class="mf">0.015</span><span class="p">]}})</span> <span class="c1"># On day 14, change beta to 0.005, and on day 28 change it back to 0.015</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt id="covasim.interventions.dynamic_pars.apply">
+<code class="sig-name descname">apply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.dynamic_pars.apply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loop over the parameters, and then loop over the days, applying them if any are found</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="covasim.interventions.sequence">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.interventions.</code><code class="sig-name descname">sequence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">days</span></em>, <em class="sig-param"><span class="n">interventions</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#covasim.interventions.Intervention" title="covasim.interventions.Intervention"><code class="xref py py-class docutils literal notranslate"><span class="pre">covasim.interventions.Intervention</span></code></a></p>
+<p>This is an example of a meta-intervention which switches between a sequence of interventions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>days</strong> (<em>list</em>) – the days on which to apply each intervention</p></li>
+<li><p><strong>interventions</strong> (<em>list</em>) – the interventions to apply on those days</p></li>
+<li><p><strong>WARNING</strong> – Will take first intervation after sum(days) days has ellapsed!</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">interv</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">sequence</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">51</span><span class="p">],</span> <span class="n">interventions</span><span class="o">=</span><span class="p">[</span>
+            <span class="n">cv</span><span class="o">.</span><span class="n">test_historical</span><span class="p">(</span><span class="n">npts</span><span class="p">,</span> <span class="n">n_tests</span><span class="o">=</span><span class="p">[</span><span class="mi">100</span><span class="p">]</span> <span class="o">*</span> <span class="n">npts</span><span class="p">,</span> <span class="n">n_positive</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">npts</span><span class="p">),</span>
+            <span class="n">cv</span><span class="o">.</span><span class="n">test_prob</span><span class="p">(</span><span class="n">npts</span><span class="p">,</span> <span class="n">symptomatic_prob</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">asymptomatic_prob</span><span class="o">=</span><span class="mf">0.002</span><span class="p">),</span>
+        <span class="p">])</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt id="covasim.interventions.sequence.apply">
+<code class="sig-name descname">apply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#covasim.sim.Sim" title="covasim.sim.Sim">covasim.sim.Sim</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.sequence.apply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply intervention</p>
+<p>Function signature matches existing intervention definition
+This method gets called at each timestep and must be implemented
+by derived classes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> – </p></li>
+<li><p><strong>sim</strong> – The Sim instance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="covasim.interventions.change_beta">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.interventions.</code><code class="sig-name descname">change_beta</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">days</span></em>, <em class="sig-param"><span class="n">changes</span></em>, <em class="sig-param"><span class="n">layers</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.change_beta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#covasim.interventions.Intervention" title="covasim.interventions.Intervention"><code class="xref py py-class docutils literal notranslate"><span class="pre">covasim.interventions.Intervention</span></code></a></p>
+<p>The most basic intervention – change beta by a certain amount.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>days</strong> (<em>int</em><em> or </em><em>array</em>) – the day or array of days to apply the interventions</p></li>
+<li><p><strong>changes</strong> (<em>float</em><em> or </em><em>array</em>) – the changes in beta (1 = no change, 0 = no transmission)</p></li>
+<li><p><strong>layers</strong> (<em>str</em><em> or </em><em>array</em>) – the layers in which to change beta</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Examples</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">interv</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">change_beta</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span> <span class="c1"># On day 25, reduce overall beta by 70% to 0.3</span>
+<span class="n">interv</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">change_beta</span><span class="p">([</span><span class="mi">14</span><span class="p">,</span> <span class="mi">28</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">layers</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span> <span class="c1"># On day 14, reduce beta by 30%, and on day 28, return to 1 for schools</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt id="covasim.interventions.change_beta.apply">
+<code class="sig-name descname">apply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.change_beta.apply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply intervention</p>
+<p>Function signature matches existing intervention definition
+This method gets called at each timestep and must be implemented
+by derived classes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> – </p></li>
+<li><p><strong>sim</strong> – The Sim instance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.interventions.change_beta.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em>, <em class="sig-param"><span class="n">ax</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.change_beta.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot vertical lines for when changes in beta</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="covasim.interventions.test_num">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.interventions.</code><code class="sig-name descname">test_num</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">daily_tests</span></em>, <em class="sig-param"><span class="n">sympt_test</span><span class="o">=</span><span class="default_value">100.0</span></em>, <em class="sig-param"><span class="n">quar_test</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">sensitivity</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">test_delay</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">loss_prob</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.test_num" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#covasim.interventions.Intervention" title="covasim.interventions.Intervention"><code class="xref py py-class docutils literal notranslate"><span class="pre">covasim.interventions.Intervention</span></code></a></p>
+<p>Test a fixed number of people per day.</p>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">interv</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">test_num</span><span class="p">(</span><span class="n">daily_tests</span><span class="o">=</span><span class="p">[</span><span class="mf">0.10</span><span class="o">*</span><span class="n">n_people</span><span class="p">]</span><span class="o">*</span><span class="n">npts</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Intervention</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="covasim.interventions.test_num.daily_tests">
+<code class="sig-name descname">daily_tests</code><em class="property"> = None</em><a class="headerlink" href="#covasim.interventions.test_num.daily_tests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Should be a list of length matching time</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.interventions.test_num.apply">
+<code class="sig-name descname">apply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.test_num.apply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply intervention</p>
+<p>Function signature matches existing intervention definition
+This method gets called at each timestep and must be implemented
+by derived classes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> – </p></li>
+<li><p><strong>sim</strong> – The Sim instance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="covasim.interventions.test_prob">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.interventions.</code><code class="sig-name descname">test_prob</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">symp_prob</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">asymp_prob</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">asymp_quar_prob</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">symp_quar_prob</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">test_sensitivity</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">loss_prob</span><span class="o">=</span><span class="default_value">0.0</span></em>, <em class="sig-param"><span class="n">test_delay</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">start_day</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.test_prob" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#covasim.interventions.Intervention" title="covasim.interventions.Intervention"><code class="xref py py-class docutils literal notranslate"><span class="pre">covasim.interventions.Intervention</span></code></a></p>
+<p>Test as many people as required based on test probability.
+Probabilities are OR together, so choose wisely.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>symptomatic_prob</strong> (<em>float</em>) – Probability of testing a symptomatic person</p></li>
+<li><p><strong>asymptomatic_prob</strong> (<em>float</em>) – Probability of testing an asymptomatic person</p></li>
+<li><p><strong>test_sensitivity</strong> (<em>float</em>) – Probability of a true positive</p></li>
+<li><p><strong>loss_prob</strong> (<em>float</em>) – Probability of loss to follow-up</p></li>
+<li><p><strong>test_delay</strong> (<em>int</em>) – How long testing takes</p></li>
+<li><p><strong>start_day</strong> (<em>int</em>) – When to start the intervention</p></li>
+<li><p><strong>symptomatic_prob</strong> – Probability of testing a symptomatic person</p></li>
+<li><p><strong>asymptomatic_prob</strong> – Probability of testing an asymptomatic person</p></li>
+<li><p><strong>test_sensitivity</strong> – Probability of a true positive</p></li>
+<li><p><strong>loss_prob</strong> – Probability of loss to follow-up</p></li>
+<li><p><strong>test_delay</strong> – How long testing takes</p></li>
+<li><p><strong>start_day</strong> – When to start the intervention</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">interv</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">test_prob</span><span class="p">(</span><span class="n">symptomatic_prob</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">asymptomatic_prob</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span> <span class="c1"># Test 10% of symptomatics and 1% of asymptomatics</span>
+<span class="n">interv</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">test_prob</span><span class="p">(</span><span class="n">symp_quar_prob</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span> <span class="c1"># Test 40% of those in quarantine with symptoms</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Intervention</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="covasim.interventions.test_prob.apply">
+<code class="sig-name descname">apply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.test_prob.apply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform testing</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="covasim.interventions.contact_tracing">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.interventions.</code><code class="sig-name descname">contact_tracing</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">trace_probs</span></em>, <em class="sig-param"><span class="n">trace_time</span></em>, <em class="sig-param"><span class="n">start_day</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">contact_reduction</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.contact_tracing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#covasim.interventions.Intervention" title="covasim.interventions.Intervention"><code class="xref py py-class docutils literal notranslate"><span class="pre">covasim.interventions.Intervention</span></code></a></p>
+<p>Contact tracing of positives</p>
+<dl class="py method">
+<dt id="covasim.interventions.contact_tracing.apply">
+<code class="sig-name descname">apply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.interventions.contact_tracing.apply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply intervention</p>
+<p>Function signature matches existing intervention definition
+This method gets called at each timestep and must be implemented
+by derived classes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> – </p></li>
+<li><p><strong>sim</strong> – The Sim instance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-covasim.misc">
+<span id="covasim-misc-module"></span><h3><a class="toc-backref" href="#id6">covasim.misc module</a><a class="headerlink" href="#module-covasim.misc" title="Permalink to this headline">¶</a></h3>
+<p>Miscellaneous functions that do not belong anywhere else</p>
+<dl class="py function">
+<dt id="covasim.misc.check_version">
+<code class="sig-prename descclassname">covasim.misc.</code><code class="sig-name descname">check_version</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expected</span></em>, <em class="sig-param"><span class="n">die</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.misc.check_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get current git information and optionally write it to disk.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>expected</strong> (<em>str</em>) – expected version information</p></li>
+<li><p><strong>die</strong> (<em>bool</em>) – whether or not to raise an exception if the check fails</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.misc.git_info">
+<code class="sig-prename descclassname">covasim.misc.</code><code class="sig-name descname">git_info</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">check</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">old_info</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">die</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.misc.git_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get current git information and optionally write it to disk.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em>) – name of the file to write to or read from</p></li>
+<li><p><strong>check</strong> (<em>bool</em>) – whether or not to compare two git versions</p></li>
+<li><p><strong>old_info</strong> (<em>dict</em>) – dictionary of information to check against</p></li>
+<li><p><strong>die</strong> (<em>bool</em>) – whether or not to raise an exception if the check fails</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p>cv.git_info(‘covasim_version.json’) # Writes to disk
+cv.git_info(‘covasim_version.json’, check=True) # Checks that current version matches saved file</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.misc.fixaxis">
+<code class="sig-prename descclassname">covasim.misc.</code><code class="sig-name descname">fixaxis</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em>, <em class="sig-param"><span class="n">useSI</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">boxoff</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.misc.fixaxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make the plotting more consistent – add a legend and ensure the axes start at 0</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.misc.progressbar">
+<code class="sig-prename descclassname">covasim.misc.</code><code class="sig-name descname">progressbar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">i</span></em>, <em class="sig-param"><span class="n">maxiters</span></em>, <em class="sig-param"><span class="n">label</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">length</span><span class="o">=</span><span class="default_value">30</span></em>, <em class="sig-param"><span class="n">empty</span><span class="o">=</span><span class="default_value">'—'</span></em>, <em class="sig-param"><span class="n">full</span><span class="o">=</span><span class="default_value">'•'</span></em>, <em class="sig-param"><span class="n">newline</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.misc.progressbar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call in a loop to create terminal progress bar.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i</strong> (<em>int</em>) – current iteration</p></li>
+<li><p><strong>maxiters</strong> (<em>int</em>) – maximum number of iterations</p></li>
+<li><p><strong>label</strong> (<em>str</em>) – initial label to print</p></li>
+<li><p><strong>length</strong> (<em>int</em>) – length of progress bar</p></li>
+<li><p><strong>empty</strong> (<em>str</em>) – character for empty steps</p></li>
+<li><p><strong>full</strong> (<em>str</em>) – character for empty steps</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pylab</span> <span class="k">as</span> <span class="nn">pl</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">progressbar</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="n">pl</span><span class="o">.</span><span class="n">pause</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Adapted from example by Greenstick (<a class="reference external" href="https://stackoverflow.com/questions/3173320/text-progress-bar-in-the-console">https://stackoverflow.com/questions/3173320/text-progress-bar-in-the-console</a>)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.misc.get_doubling_time">
+<code class="sig-prename descclassname">covasim.misc.</code><code class="sig-name descname">get_doubling_time</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em>, <em class="sig-param"><span class="n">series</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">interval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">start_day</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">end_day</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">moving_window</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">exp_approx</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">max_doubling_time</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">eps</span><span class="o">=</span><span class="default_value">0.001</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.misc.get_doubling_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to calculate doubling time.</p>
+<p><strong>Examples</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_doubling_time</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">30</span><span class="p">])</span> <span class="c1"># returns the doubling time over the given interval (single float)</span>
+<span class="n">get_doubling_time</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">30</span><span class="p">],</span> <span class="n">moving_window</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># returns doubling times calculated over moving windows (array)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.misc.poisson_test">
+<code class="sig-prename descclassname">covasim.misc.</code><code class="sig-name descname">poisson_test</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">count1</span></em>, <em class="sig-param"><span class="n">count2</span></em>, <em class="sig-param"><span class="n">exposure1</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">exposure2</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">ratio_null</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">method</span><span class="o">=</span><span class="default_value">'score'</span></em>, <em class="sig-param"><span class="n">alternative</span><span class="o">=</span><span class="default_value">'2-sided'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.misc.poisson_test" title="Permalink to this definition">¶</a></dt>
+<dd><p>test for ratio of two sample Poisson intensities</p>
+<p>If the two Poisson rates are g1 and g2, then the Null hypothesis is</p>
+<p>H0: g1 / g2 = ratio_null</p>
+<p>against one of the following alternatives</p>
+<p>H1_2-sided: g1 / g2 != ratio_null
+H1_larger: g1 / g2 &gt; ratio_null
+H1_smaller: g1 / g2 &lt; ratio_null</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>count1</strong> (<em>int</em>) – Number of events in first sample</p></li>
+<li><p><strong>exposure1</strong> (<em>float</em>) – Total exposure (time * subjects) in first sample</p></li>
+<li><p><strong>count2</strong> (<em>int</em>) – Number of events in first sample</p></li>
+<li><p><strong>exposure2</strong> (<em>float</em>) – Total exposure (time * subjects) in first sample</p></li>
+<li><p><strong>ratio</strong> (<em>float</em>) – ratio of the two Poisson rates under the Null hypothesis. Default is 1.</p></li>
+<li><p><strong>method</strong> (<em>string</em>) – Method for the test statistic and the p-value. Defaults to <cite>‘score’</cite>.
+Current Methods are based on Gu et. al 2008
+Implemented are ‘wald’, ‘score’ and ‘sqrt’ based asymptotic normal
+distribution, and the exact conditional test ‘exact-cond’, and its mid-point
+version ‘cond-midp’, see Notes</p></li>
+<li><p><strong>alternative</strong> (<em>string</em>) – <p>The alternative hypothesis, H1, has to be one of the following</p>
+<blockquote>
+<div><p>’two-sided’: H1: ratio of rates is not equal to ratio_null (default)
+‘larger’ :   H1: ratio of rates is larger than ratio_null
+‘smaller’ :  H1: ratio of rates is smaller than ratio_null</p>
+</div></blockquote>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>pvalue two-sided # stat</em></p></li>
+<li><p><em>not yet</em></p></li>
+<li><p><strong>#results</strong> (<em>Results instance</em>)</p></li>
+<li><p><em>#    The resulting test statistics and p-values are available as attributes.</em></p></li>
+</ul>
+</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>‘wald’: method W1A, wald test, variance based on separate estimates
+‘score’: method W2A, score test, variance based on estimate under Null
+‘wald-log’: W3A
+‘score-log’ W4A
+‘sqrt’: W5A, based on variance stabilizing square root transformation
+‘exact-cond’: exact conditional test based on binomial distribution
+‘cond-midp’: midpoint-pvalue of exact conditional test</p>
+<p>The latter two are only verified for one-sided example.</p>
+<p class="rubric">References</p>
+<p>Gu, Ng, Tang, Schucany 2008: Testing the Ratio of Two Poisson Rates,
+Biometrical Journal 50 (2008) 2, 2008</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-covasim.parameters">
+<span id="covasim-parameters-module"></span><h3><a class="toc-backref" href="#id7">covasim.parameters module</a><a class="headerlink" href="#module-covasim.parameters" title="Permalink to this headline">¶</a></h3>
+<p>Set the parameters for Covasim.</p>
+<dl class="py function">
+<dt id="covasim.parameters.make_pars">
+<code class="sig-prename descclassname">covasim.parameters.</code><code class="sig-name descname">make_pars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">set_prognoses</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">prog_by_age</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">use_layers</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.parameters.make_pars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set parameters for the simulation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Set_prognoses</strong> (<em>bool</em>) – whether or not to create prognoses (else, added when the population is created)</p></li>
+<li><p><strong>prog_by_age</strong> (<em>bool</em>) – whether or not to use age-based severity, mortality etc.</p></li>
+<li><p><strong>use_layers</strong> (<em>bool</em>) – whether or not to use household, school, etc. contact layers</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the parameters of the simulation</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>pars (dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.parameters.set_contacts">
+<code class="sig-prename descclassname">covasim.parameters.</code><code class="sig-name descname">set_contacts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pars</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.parameters.set_contacts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Small helper function to set numbers of contacts and beta based on whether
+or not to use layers. Typically not called by the user.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pars</strong> (<em>dict</em>) – the parameters dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.parameters.get_prognoses">
+<code class="sig-prename descclassname">covasim.parameters.</code><code class="sig-name descname">get_prognoses</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">by_age</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.parameters.get_prognoses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the default parameter values for prognoses</p>
+<p>The prognosis probabilities are conditional given the previous disease state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>by_age</strong> (<em>bool</em>) – whether or not to use age-specific values</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the dictionary of prognosis probabilities</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>prog_pars (dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.parameters.load_data">
+<code class="sig-prename descclassname">covasim.parameters.</code><code class="sig-name descname">load_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">columns</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">calculate</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.parameters.load_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load data for comparing to the model output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em>) – the name of the file to load (either Excel or CSV)</p></li>
+<li><p><strong>columns</strong> (<em>list</em>) – list of column names (otherwise, load all)</p></li>
+<li><p><strong>calculate</strong> (<em>bool</em>) – whether or not to calculate cumulative values from daily counts</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – passed to pd.read_excel()</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>pandas dataframe of the loaded data</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>data (dataframe)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-covasim.people">
+<span id="covasim-people-module"></span><h3><a class="toc-backref" href="#id8">covasim.people module</a><a class="headerlink" href="#module-covasim.people" title="Permalink to this headline">¶</a></h3>
+<p>Defines the Person class and functions associated with making people.</p>
+<dl class="py class">
+<dt id="covasim.people.People">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.people.</code><code class="sig-name descname">People</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pars</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">pop_size</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#covasim.base.BasePeople" title="covasim.base.BasePeople"><code class="xref py py-class docutils literal notranslate"><span class="pre">covasim.base.BasePeople</span></code></a></p>
+<p>A class to perform all the operations on the people.</p>
+<dl class="py method">
+<dt id="covasim.people.People.initialize">
+<code class="sig-name descname">initialize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pars</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dynamic_keys</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.initialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform initializations</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.set_prognoses">
+<code class="sig-name descname">set_prognoses</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pars</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.set_prognoses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the prognoses for each person based on age</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.set_betas">
+<code class="sig-name descname">set_betas</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pars</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.set_betas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set betas for each layer</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.update_states">
+<code class="sig-name descname">update_states</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.update_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform all state updates</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.update_contacts">
+<code class="sig-name descname">update_contacts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dynamic_keys</span><span class="o">=</span><span class="default_value">'c'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.update_contacts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set dynamic contacts, by default, community (‘c’)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.make_susceptible">
+<code class="sig-name descname">make_susceptible</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.make_susceptible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make person susceptible. This is used during dynamic resampling</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.check_inds">
+<code class="sig-name descname">check_inds</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">current</span></em>, <em class="sig-param"><span class="n">date</span></em>, <em class="sig-param"><span class="n">filter_inds</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.check_inds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return indices for which the current state is false nad which meet the date criterion</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.check_infectious">
+<code class="sig-name descname">check_infectious</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.check_infectious" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if they become infectious</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.check_symptomatic">
+<code class="sig-name descname">check_symptomatic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.check_symptomatic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check for new progressions to symptomatic</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.check_severe">
+<code class="sig-name descname">check_severe</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.check_severe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check for new progressions to severe</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.check_critical">
+<code class="sig-name descname">check_critical</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.check_critical" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check for new progressions to critical</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.check_recovery">
+<code class="sig-name descname">check_recovery</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.check_recovery" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check for recovery</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.check_death">
+<code class="sig-name descname">check_death</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.check_death" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether or not this person died on this timestep</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.check_tested">
+<code class="sig-name descname">check_tested</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.check_tested" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check for new tests</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.check_diagnosed">
+<code class="sig-name descname">check_diagnosed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.check_diagnosed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check for new diagnoses</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.check_quar">
+<code class="sig-name descname">check_quar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.check_quar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check for whether someone has been contacted by a positive</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.infect">
+<code class="sig-name descname">infect</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inds</span></em>, <em class="sig-param"><span class="n">bed_max</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.infect" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Infect people and determine their eventual outcomes.</dt><dd><ul class="simple">
+<li><p>Every infected person can infect other people, regardless of whether they develop symptoms</p></li>
+<li><p>Infected people that develop symptoms are disaggregated into mild vs. severe (=requires hospitalization) vs. critical (=requires ICU)</p></li>
+<li><p>Every asymptomatic, mildly symptomatic, and severely symptomatic person recovers</p></li>
+<li><p>Critical cases either recover or die</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inds</strong> (<em>array</em>) – array of people to infect</p></li>
+<li><p><strong>t</strong> (<em>int</em>) – current timestep</p></li>
+<li><p><strong>bed_max</strong> (<em>bool</em>) – whether or not there is a bed available for this person</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>number of people infected</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>count (int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.test">
+<code class="sig-name descname">test</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inds</span></em>, <em class="sig-param"><span class="n">test_sensitivity</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">loss_prob</span><span class="o">=</span><span class="default_value">0.0</span></em>, <em class="sig-param"><span class="n">test_delay</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to test people</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inds</strong> – indices of who to test</p></li>
+<li><p><strong>test_sensitivity</strong> (<em>float</em>) – probability of a true positive</p></li>
+<li><p><strong>loss_prob</strong> (<em>float</em>) – probability of loss to follow-up</p></li>
+<li><p><strong>test_delay</strong> (<em>int</em>) – number of days before test results are ready</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Whether or not this person tested positive</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.quarantine">
+<code class="sig-name descname">quarantine</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.quarantine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Quarantine selected people starting on the current day. If a person is already
+quarantined, this will extend their quarantine.
+:param inds: indices of who to quarantine
+:type inds: array</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.people.People.trace">
+<code class="sig-name descname">trace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inds</span></em>, <em class="sig-param"><span class="n">trace_probs</span></em>, <em class="sig-param"><span class="n">trace_time</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.people.People.trace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trace the contacts of the people provided
+:param inds: indices of whose contacts to trace
+:type inds: array
+:param trace_probs: probability of being able to trace people at each contact layer - should have the same keys as contacts
+:type trace_probs: dict
+:param trace_time: # days it’ll take to trace people at each contact layer - should have the same keys as contacts
+:type trace_time: dict</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-covasim.population">
+<span id="covasim-population-module"></span><h3><a class="toc-backref" href="#id9">covasim.population module</a><a class="headerlink" href="#module-covasim.population" title="Permalink to this headline">¶</a></h3>
+<p>Defines functions for making the population.</p>
+<dl class="py function">
+<dt id="covasim.population.make_people">
+<code class="sig-prename descclassname">covasim.population.</code><code class="sig-name descname">make_people</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">die</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">reset</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.population.make_people" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make the actual people for the simulation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sim</strong> (<a class="reference internal" href="covasim.cruise_ship.html#covasim.cruise_ship.model.Sim" title="covasim.cruise_ship.model.Sim"><em>Sim</em></a>) – the simulation object</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – level of detail to print</p></li>
+<li><p><strong>id_len</strong> (<em>int</em>) – length of ID for each person (default: calculate required length based on the number of people)</p></li>
+<li><p><strong>die</strong> (<em>bool</em>) – whether or not to fail if synthetic populations are requested but not available</p></li>
+<li><p><strong>reset</strong> (<em>bool</em>) – whether to force population creation even if self.popdict exists</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.population.make_randpop">
+<code class="sig-prename descclassname">covasim.population.</code><code class="sig-name descname">make_randpop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em>, <em class="sig-param"><span class="n">age_data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sex_ratio</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">microstructure</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.population.make_randpop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make a random population, without contacts</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.population.make_random_contacts">
+<code class="sig-prename descclassname">covasim.population.</code><code class="sig-name descname">make_random_contacts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pop_size</span></em>, <em class="sig-param"><span class="n">contacts</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.population.make_random_contacts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make random static contacts</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.population.make_microstructured_contacts">
+<code class="sig-prename descclassname">covasim.population.</code><code class="sig-name descname">make_microstructured_contacts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pop_size</span></em>, <em class="sig-param"><span class="n">contacts</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.population.make_microstructured_contacts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create microstructured contacts – i.e. households, schools, etc.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.population.make_hybrid_contacts">
+<code class="sig-prename descclassname">covasim.population.</code><code class="sig-name descname">make_hybrid_contacts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pop_size</span></em>, <em class="sig-param"><span class="n">ages</span></em>, <em class="sig-param"><span class="n">contacts</span></em>, <em class="sig-param"><span class="n">school_ages</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">work_ages</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.population.make_hybrid_contacts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create “hybrid” contacts – microstructured contacts for households and
+random contacts for schools and workplaces, both of which have extremely
+basic age structure. A combination of both make_random_contacts() and
+make_microstructured_contacts().</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.population.make_synthpop">
+<code class="sig-prename descclassname">covasim.population.</code><code class="sig-name descname">make_synthpop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.population.make_synthpop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make a population using synthpops, including contacts</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-covasim.requirements">
+<span id="covasim-requirements-module"></span><h3><a class="toc-backref" href="#id10">covasim.requirements module</a><a class="headerlink" href="#module-covasim.requirements" title="Permalink to this headline">¶</a></h3>
+<p>Check that correct versions of each library are installed, and print warnings
+or errors if not.</p>
+<dl class="py function">
+<dt id="covasim.requirements.check_sciris">
+<code class="sig-prename descclassname">covasim.requirements.</code><code class="sig-name descname">check_sciris</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.requirements.check_sciris" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that Sciris is available and the right version</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.requirements.check_scirisweb">
+<code class="sig-prename descclassname">covasim.requirements.</code><code class="sig-name descname">check_scirisweb</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">die</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.requirements.check_scirisweb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that Scirisweb is available and the right version</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.requirements.check_synthpops">
+<code class="sig-prename descclassname">covasim.requirements.</code><code class="sig-name descname">check_synthpops</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">die</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.requirements.check_synthpops" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether synthpops is available</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-covasim.run">
+<span id="covasim-run-module"></span><h3><a class="toc-backref" href="#id11">covasim.run module</a><a class="headerlink" href="#module-covasim.run" title="Permalink to this headline">¶</a></h3>
+<p>Functions for running multiple Covasim runs.</p>
+<dl class="py function">
+<dt id="covasim.run.make_metapars">
+<code class="sig-prename descclassname">covasim.run.</code><code class="sig-name descname">make_metapars</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.run.make_metapars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create default metaparameters for a Scenarios run</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="covasim.run.Scenarios">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.run.</code><code class="sig-name descname">Scenarios</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">metapars</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">scenarios</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">basepars</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.run.Scenarios" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#covasim.base.ParsObj" title="covasim.base.ParsObj"><code class="xref py py-class docutils literal notranslate"><span class="pre">covasim.base.ParsObj</span></code></a></p>
+<p>Class for running multiple sets of multiple simulations – e.g., scenarios.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sim</strong> (<a class="reference internal" href="covasim.cruise_ship.html#covasim.cruise_ship.model.Sim" title="covasim.cruise_ship.model.Sim"><em>Sim</em></a><em> or </em><em>None</em>) – if supplied, use a pre-created simulation as the basis for the scenarios</p></li>
+<li><p><strong>metapars</strong> (<em>dict</em>) – meta-parameters for the run, e.g. number of runs; see make_metapars() for structure</p></li>
+<li><p><strong>scenarios</strong> (<em>dict</em>) – a dictionary defining the scenarios; see default_scenario for structure</p></li>
+<li><p><strong>basepars</strong> (<em>dict</em>) – a dictionary of sim parameters to be used for the basis of the scenarios (not required if sim is provided)</p></li>
+<li><p><strong>filename</strong> (<em>str</em>) – a filename for saving (defaults to the creation date)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a Scenarios object</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>scens</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="covasim.run.Scenarios.result_keys">
+<code class="sig-name descname">result_keys</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.run.Scenarios.result_keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attempt to retrieve the results keys from the base sim</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.run.Scenarios.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">debug</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.run.Scenarios.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the actual scenarios</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>debug</strong> (<em>bool</em>) – if True, runs a single run instead of multiple, which makes debugging easier</p></li>
+<li><p><strong>verbose</strong> (<em>int</em>) – level of detail to print, passed to sim.run()</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – passed to multi_run() and thence to sim.run()</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None (modifies Scenarios object in place)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.run.Scenarios.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">to_plot</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">do_save</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fig_path</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fig_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">plot_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">axis_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">legend_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">as_dates</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">dateformat</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">interval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">n_cols</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">font_size</span><span class="o">=</span><span class="default_value">18</span></em>, <em class="sig-param"><span class="n">font_family</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">grid</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">commaticks</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">do_show</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">sep_figs</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.run.Scenarios.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the results – can supply arguments for both the figure and the plots.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>to_plot</strong> (<em>dict</em>) – Dict of results to plot; see default_scen_plots for structure</p></li>
+<li><p><strong>do_save</strong> (<em>bool</em>) – Whether or not to save the figure</p></li>
+<li><p><strong>fig_path</strong> (<em>str</em>) – Path to save the figure</p></li>
+<li><p><strong>fig_args</strong> (<em>dict</em>) – Dictionary of kwargs to be passed to pl.figure()</p></li>
+<li><p><strong>plot_args</strong> (<em>dict</em>) – Dictionary of kwargs to be passed to pl.plot()</p></li>
+<li><p><strong>axis_args</strong> (<em>dict</em>) – Dictionary of kwargs to be passed to pl.subplots_adjust()</p></li>
+<li><p><strong>fill_args</strong> (<em>dict</em>) – Dictionary of kwargs to be passed to pl.fill_between()</p></li>
+<li><p><strong>legend_args</strong> (<em>dict</em>) – Dictionary of kwargs to be passed to pl.legend()</p></li>
+<li><p><strong>as_dates</strong> (<em>bool</em>) – Whether to plot the x-axis as dates or time points</p></li>
+<li><p><strong>dateformat</strong> (<em>str</em>) – Date string format, e.g. ‘%B %d’</p></li>
+<li><p><strong>interval</strong> (<em>int</em>) – Interval between tick marks</p></li>
+<li><p><strong>n_cols</strong> (<em>int</em>) – Number of columns of subpanels to use for subplot</p></li>
+<li><p><strong>font_size</strong> (<em>int</em>) – Size of the font</p></li>
+<li><p><strong>font_family</strong> (<em>str</em>) – Font face</p></li>
+<li><p><strong>grid</strong> (<em>bool</em>) – Whether or not to plot gridlines</p></li>
+<li><p><strong>commaticks</strong> (<em>bool</em>) – Plot y-axis with commas rather than scientific notation</p></li>
+<li><p><strong>do_show</strong> (<em>bool</em>) – Whether or not to show the figure</p></li>
+<li><p><strong>sep_figs</strong> (<em>bool</em>) – Whether to show separate figures for different results instead of subplots</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – Display a bit of extra information</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Figure handle</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>fig</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.run.Scenarios.to_json">
+<code class="sig-name descname">to_json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tostring</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">indent</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.run.Scenarios.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export results as JSON.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – if None, return string; else, write to file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A unicode string containing a JSON representation of the results,
+or writes the JSON file to disk</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.run.Scenarios.to_excel">
+<code class="sig-name descname">to_excel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.run.Scenarios.to_excel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export results as XLSX</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – if None, return string; else, write to file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An sc.Spreadsheet with an Excel file, or writes the file to disk</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.run.Scenarios.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">keep_sims</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">keep_population</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.run.Scenarios.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save to disk as a gzipped pickle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em><em> or </em><em>None</em>) – the name or path of the file to save to; if None, uses stored</p></li>
+<li><p><strong>keep_sims</strong> (<em>bool</em>) – whether or not to store the actual Sim objects in the Scenarios object</p></li>
+<li><p><strong>keep_population</strong> (<em>bool</em>) – whether or not to store the population in the Sim objects (NB, very large)</p></li>
+<li><p><strong>keywords</strong> – passed to makefilepath()</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the validated absolute path to the saved file</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>filename (str)</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scens</span><span class="o">.</span><span class="n">save</span><span class="p">()</span> <span class="c1"># Saves to a .scens file with the date and time of creation by default</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.run.Scenarios.load">
+<em class="property">static </em><code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.run.Scenarios.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load from disk from a gzipped pickle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em>) – the name or path of the file to save to</p></li>
+<li><p><strong>keywords</strong> – passed to makefilepath()</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the loaded scenarios object</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>scens (<a class="reference internal" href="#covasim.run.Scenarios" title="covasim.run.Scenarios">Scenarios</a>)</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sim</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">Scenarios</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;my-scenarios.scens&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.run.single_run">
+<code class="sig-prename descclassname">covasim.run.</code><code class="sig-name descname">single_run</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em>, <em class="sig-param"><span class="n">ind</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">noise</span><span class="o">=</span><span class="default_value">0.0</span></em>, <em class="sig-param"><span class="n">noisepar</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">keep_people</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">run_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sim_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.run.single_run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience function to perform a single simulation run. Mostly used for
+parallelization, but can also be used directly.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sim</strong> (<a class="reference internal" href="covasim.cruise_ship.html#covasim.cruise_ship.model.Sim" title="covasim.cruise_ship.model.Sim"><em>Sim</em></a>) – the sim instance to be run</p></li>
+<li><p><strong>ind</strong> (<em>int</em>) – the index of this sim</p></li>
+<li><p><strong>noise</strong> (<em>float</em>) – the amount of noise to add to each run</p></li>
+<li><p><strong>noisepar</strong> (<em>string</em>) – the name of the parameter to add noise to</p></li>
+<li><p><strong>verbose</strong> (<em>int</em>) – detail to print</p></li>
+<li><p><strong>run_args</strong> (<em>dict</em>) – arguments passed to sim.run()</p></li>
+<li><p><strong>sim_args</strong> (<em>dict</em>) – extra parameters to pass to the sim, e.g. ‘n_infected’</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – also passed to the sim</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a single sim object with results</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>sim (<a class="reference internal" href="covasim.cruise_ship.html#covasim.cruise_ship.model.Sim" title="covasim.cruise_ship.model.Sim">Sim</a>)</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">covasim</span> <span class="k">as</span> <span class="nn">cv</span>
+<span class="n">sim</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">Sim</span><span class="p">()</span> <span class="c1"># Create a default simulation</span>
+<span class="n">sim</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">single_run</span><span class="p">(</span><span class="n">sim</span><span class="p">)</span> <span class="c1"># Run it, equivalent(ish) to sim.run()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.run.multi_run">
+<code class="sig-prename descclassname">covasim.run.</code><code class="sig-name descname">multi_run</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em>, <em class="sig-param"><span class="n">n_runs</span><span class="o">=</span><span class="default_value">4</span></em>, <em class="sig-param"><span class="n">noise</span><span class="o">=</span><span class="default_value">0.0</span></em>, <em class="sig-param"><span class="n">noisepar</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">iterpars</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">combine</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">keep_people</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">run_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sim_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.run.multi_run" title="Permalink to this definition">¶</a></dt>
+<dd><p>For running multiple runs in parallel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sim</strong> (<a class="reference internal" href="covasim.cruise_ship.html#covasim.cruise_ship.model.Sim" title="covasim.cruise_ship.model.Sim"><em>Sim</em></a>) – the sim instance to be run</p></li>
+<li><p><strong>n_runs</strong> (<em>int</em>) – the number of parallel runs</p></li>
+<li><p><strong>noise</strong> (<em>float</em>) – the amount of noise to add to each run</p></li>
+<li><p><strong>noisepar</strong> (<em>string</em>) – the name of the parameter to add noise to</p></li>
+<li><p><strong>iterpars</strong> (<em>dict</em>) – any other parameters to iterate over the runs; see sc.parallelize() for syntax</p></li>
+<li><p><strong>verbose</strong> (<em>int</em>) – detail to print</p></li>
+<li><p><strong>combine</strong> (<em>bool</em>) – whether or not to combine all results into one sim, rather than return multiple sim objects</p></li>
+<li><p><strong>keep_people</strong> (<em>bool</em>) – whether or not to keep the people in each sim</p></li>
+<li><p><strong>run_args</strong> (<em>dict</em>) – arguments passed to sim.run()</p></li>
+<li><p><strong>sim_args</strong> (<em>dict</em>) – extra parameters to pass to the sim</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – also passed to the sim</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>If combine is True, a single sim object with the combined results from each sim.
+Otherwise, a list of sim objects (default).</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">covasim</span> <span class="k">as</span> <span class="nn">cv</span>
+<span class="n">sim</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">Sim</span><span class="p">()</span>
+<span class="n">sims</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">multi_run</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="n">n_runs</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">noise</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-covasim.sim">
+<span id="covasim-sim-module"></span><h3><a class="toc-backref" href="#id12">covasim.sim module</a><a class="headerlink" href="#module-covasim.sim" title="Permalink to this headline">¶</a></h3>
+<p>Defines the Sim class, Covasim’s core class.</p>
+<dl class="py class">
+<dt id="covasim.sim.Sim">
+<em class="property">class </em><code class="sig-prename descclassname">covasim.sim.</code><code class="sig-name descname">Sim</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pars</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">datafile</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">datacols</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">popfile</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">label</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#covasim.base.BaseSim" title="covasim.base.BaseSim"><code class="xref py py-class docutils literal notranslate"><span class="pre">covasim.base.BaseSim</span></code></a></p>
+<p>The Sim class handles the running of the simulation: the number of children,
+number of time points, and the parameters of the simulation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pars</strong> (<em>dict</em>) – parameters to modify from their default values</p></li>
+<li><p><strong>datafile</strong> (<em>str</em>) – filename of (Excel) data file to load, if any</p></li>
+<li><p><strong>datacols</strong> (<em>list</em>) – list of column names of the data file to load</p></li>
+<li><p><strong>filename</strong> (<em>str</em>) – the filename for this simulation, if it’s saved (default: creation date)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="covasim.sim.Sim.update_pars">
+<code class="sig-name descname">update_pars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pars</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">create</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.update_pars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ensure that metaparameters get used properly before being updated</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.set_metadata">
+<code class="sig-name descname">set_metadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.set_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the metadata for the simulation – creation time and filename</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.load_data">
+<code class="sig-name descname">load_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datafile</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">datacols</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.load_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the data to calibrate against, if provided</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.load_population">
+<code class="sig-name descname">load_population</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.load_population" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the population dictionary from file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – name of the file to load</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.save_population">
+<code class="sig-name descname">save_population</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.save_population" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the population dictionary to file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – name of the file to save to.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.initialize">
+<code class="sig-name descname">initialize</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.initialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform all initializations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>kwargs</strong> (<em>dict</em>) – passed to init_people</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.validate_pars">
+<code class="sig-name descname">validate_pars</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.validate_pars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Some parameters can take multiple types; this makes them consistent</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.init_results">
+<code class="sig-name descname">init_results</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.init_results" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the main results structure.
+We differentiate between flows, stocks, and cumulative results
+The prefix “new” is used for flow variables, i.e. counting new events (infections/deaths/recoveries) on each timestep
+The prefix “n” is used for stock variables, i.e. counting the total number in any given state (sus/inf/rec/etc) on any particular timestep
+The prefix “cum_” is used for cumulative variables, i.e. counting the total number that have ever been in a given state at some point in the sim
+Note that, by definition, n_dead is the same as cum_deaths and n_recovered is the same as cum_recoveries, so we only define the cumulative versions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.init_people">
+<code class="sig-name descname">init_people</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">id_len</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.init_people" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the people</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.step">
+<code class="sig-name descname">step</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Step the simulation forward in time</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.rescale">
+<code class="sig-name descname">rescale</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.rescale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dynamically rescale the population</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">do_plot</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the simulation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>do_plot</strong> (<em>bool</em>) – whether to plot</p></li>
+<li><p><strong>verbose</strong> (<em>int</em>) – level of detail to print</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – passed to self.plot()</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the results object (also modifies in-place)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>results</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.finalize">
+<code class="sig-name descname">finalize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.finalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute final results, likelihood, etc.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.compute_doubling">
+<code class="sig-name descname">compute_doubling</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">window</span><span class="o">=</span><span class="default_value">7</span></em>, <em class="sig-param"><span class="n">max_doubling_time</span><span class="o">=</span><span class="default_value">50</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.compute_doubling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate doubling time using exponential approximation – a more detailed
+approach is in utils.py. Compares infections at time t to infections at time
+t-window, and uses that to compute the doubling time. For example, if there are
+100 cumulative infections on day 12 and 200 infections on day 19, doubling
+time is 7 days.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>window</strong> (<em>float</em>) – the size of the window used (larger values are more accurate but less precise)</p></li>
+<li><p><strong>max_doubling_time</strong> (<em>float</em>) – doubling time could be infinite, so this places a bound on it</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None (modifies results in place)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.compute_r_eff">
+<code class="sig-name descname">compute_r_eff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.compute_r_eff" title="Permalink to this definition">¶</a></dt>
+<dd><p>Effective reproductive number based on number of people each person infected.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.compute_gen_time">
+<code class="sig-name descname">compute_gen_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.compute_gen_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the generation time (or serial interval) there are two
+ways to do this calculation. The ‘true’ interval (exposure time to
+exposure time) or ‘clinical’ (symptom onset to symptom onset).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.likelihood">
+<code class="sig-name descname">likelihood</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#covasim.sim.Sim.likelihood" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the log-likelihood of the current simulation based on the number
+of new diagnoses.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.summary_stats">
+<code class="sig-name descname">summary_stats</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.summary_stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the summary statistics to display at the end of a run</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">to_plot</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">do_save</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fig_path</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fig_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">plot_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">scatter_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">axis_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">legend_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">as_dates</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">dateformat</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">interval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">n_cols</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">font_size</span><span class="o">=</span><span class="default_value">18</span></em>, <em class="sig-param"><span class="n">font_family</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">use_grid</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">use_commaticks</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">do_show</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the results – can supply arguments for both the figure and the plots.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>to_plot</strong> (<em>dict</em>) – Nested dict of results to plot; see default_sim_plots for structure</p></li>
+<li><p><strong>do_save</strong> (<em>bool</em><em> or </em><em>str</em>) – Whether or not to save the figure. If a string, save to that filename.</p></li>
+<li><p><strong>fig_path</strong> (<em>str</em>) – Path to save the figure</p></li>
+<li><p><strong>fig_args</strong> (<em>dict</em>) – Dictionary of kwargs to be passed to pl.figure()</p></li>
+<li><p><strong>plot_args</strong> (<em>dict</em>) – Dictionary of kwargs to be passed to pl.plot()</p></li>
+<li><p><strong>scatter_args</strong> (<em>dict</em>) – Dictionary of kwargs to be passed to pl.scatter()</p></li>
+<li><p><strong>axis_args</strong> (<em>dict</em>) – Dictionary of kwargs to be passed to pl.subplots_adjust()</p></li>
+<li><p><strong>legend_args</strong> (<em>dict</em>) – Dictionary of kwargs to be passed to pl.legend()</p></li>
+<li><p><strong>as_dates</strong> (<em>bool</em>) – Whether to plot the x-axis as dates or time points</p></li>
+<li><p><strong>dateformat</strong> (<em>str</em>) – Date string format, e.g. ‘%B %d’</p></li>
+<li><p><strong>interval</strong> (<em>int</em>) – Interval between tick marks</p></li>
+<li><p><strong>n_cols</strong> (<em>int</em>) – Number of columns of subpanels to use for subplot</p></li>
+<li><p><strong>font_size</strong> (<em>int</em>) – Size of the font</p></li>
+<li><p><strong>font_family</strong> (<em>str</em>) – Font face</p></li>
+<li><p><strong>use_grid</strong> (<em>bool</em>) – Whether or not to plot gridlines</p></li>
+<li><p><strong>use_commaticks</strong> (<em>bool</em>) – Plot y-axis with commas rather than scientific notation</p></li>
+<li><p><strong>do_show</strong> (<em>bool</em>) – Whether or not to show the figure</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – Display a bit of extra information</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Figure handle</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>fig</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="covasim.sim.Sim.plot_result">
+<code class="sig-name descname">plot_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key</span></em>, <em class="sig-param"><span class="n">fig_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">plot_args</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.sim.Sim.plot_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple method to plot a single result. Useful for results that aren’t
+standard outputs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>key</strong> (<em>str</em>) – the key of the result to plot</p></li>
+<li><p><strong>fig_args</strong> (<em>dict</em>) – passed to pl.figure()</p></li>
+<li><p><strong>plot_args</strong> (<em>dict</em>) – passed to pl.plot()</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sim</span><span class="o">.</span><span class="n">plot_result</span><span class="p">(</span><span class="s1">&#39;doubling_time&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-covasim.utils">
+<span id="covasim-utils-module"></span><h3><a class="toc-backref" href="#id13">covasim.utils module</a><a class="headerlink" href="#module-covasim.utils" title="Permalink to this headline">¶</a></h3>
+<p>Numerical utilities for running Covasim</p>
+<dl class="py function">
+<dt id="covasim.utils.sample">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">sample</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dist</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">par1</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">par2</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">size</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a sample from the distribution specified by the input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dist</strong> (<em>str</em>) – the distribution to sample from</p></li>
+<li><p><strong>par1</strong> (<em>float</em>) – the “main” distribution parameter (e.g. mean)</p></li>
+<li><p><strong>par2</strong> (<em>float</em>) – the “secondary” distribution parameter (e.g. std)</p></li>
+<li><p><strong>size</strong> (<em>int</em>) – the number of samples (default=1)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A length N array of samples</p>
+</dd>
+</dl>
+<p><strong>Examples</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sample</span><span class="p">()</span> <span class="c1"># returns Unif(0,1)</span>
+<span class="n">sample</span><span class="p">(</span><span class="n">dist</span><span class="o">=</span><span class="s1">&#39;normal&#39;</span><span class="p">,</span> <span class="n">par1</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">par2</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1"># returns Normal(μ=3, σ=0.5)</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<p>Lognormal distributions are parameterized with reference to the underlying normal distribution (see:
+<a class="reference external" href="https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.random.lognormal.html">https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.random.lognormal.html</a>), but this
+function assumes the user wants to specify the mean and variance of the lognormal distribution.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.set_seed">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">set_seed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">seed</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.set_seed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the random seed – complicated because of Numba</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.true">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">true</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the indices of the values of the array that are true</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.false">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">false</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the indices of the values of the array that are false</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.defined">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">defined</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.defined" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the indices of the values of the array that are not-nan</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.itrue">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">itrue</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arr</span></em>, <em class="sig-param"><span class="n">inds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.itrue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the indices that are true in the array – name is short for indices[true]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.ifalse">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">ifalse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arr</span></em>, <em class="sig-param"><span class="n">inds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.ifalse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the indices that are true in the array – name is short for indices[false]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.idefined">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">idefined</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arr</span></em>, <em class="sig-param"><span class="n">inds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.idefined" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the indices that are true in the array – name is short for indices[defined]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.itruei">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">itruei</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arr</span></em>, <em class="sig-param"><span class="n">inds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.itruei" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the indices that are true in the array – name is short for indices[true[indices]]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.ifalsei">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">ifalsei</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arr</span></em>, <em class="sig-param"><span class="n">inds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.ifalsei" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the indices that are false in the array – name is short for indices[false[indices]]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.idefinedi">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">idefinedi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arr</span></em>, <em class="sig-param"><span class="n">inds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.idefinedi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the indices that are defined in the array – name is short for indices[defined[indices]]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.binomial_arr">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">binomial_arr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">prob_arr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.binomial_arr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Binomial (Bernoulli) trials each with different probabilities – return boolean array</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.multinomial">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">multinomial</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">probs</span></em>, <em class="sig-param"><span class="n">repeats</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.multinomial" title="Permalink to this definition">¶</a></dt>
+<dd><p>A multinomial trial</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.poisson">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">poisson</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rate</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.poisson" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Poisson trial</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.binomial_filter">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">binomial_filter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">prob</span></em>, <em class="sig-param"><span class="n">arr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.binomial_filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Binomial “filter” – return entries that passed</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.choose">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">choose</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">max_n</span></em>, <em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.choose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Choose a subset of items (e.g., people) without replacement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>max_n</strong> (<em>int</em>) – the total number of items</p></li>
+<li><p><strong>n</strong> (<em>int</em>) – the number of items to choose</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">choose</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="n">will</span> <span class="n">choose</span> <span class="mi">2</span> <span class="n">out</span> <span class="n">of</span> <span class="mi">5</span> <span class="n">people</span> <span class="k">with</span> <span class="n">equal</span> <span class="n">probability</span><span class="o">.</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.choose_r">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">choose_r</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">max_n</span></em>, <em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.choose_r" title="Permalink to this definition">¶</a></dt>
+<dd><p>Choose a subset of items (e.g., people), with replacement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>max_n</strong> (<em>int</em>) – the total number of items</p></li>
+<li><p><strong>n</strong> (<em>int</em>) – the number of items to choose</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p><code class="docutils literal notranslate"><span class="pre">choose(5,</span> <span class="pre">2)</span></code> will choose 2 out of 5 people with equal probability.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="covasim.utils.choose_w">
+<code class="sig-prename descclassname">covasim.utils.</code><code class="sig-name descname">choose_w</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">probs</span></em>, <em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">unique</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#covasim.utils.choose_w" title="Permalink to this definition">¶</a></dt>
+<dd><p>Choose n items (e.g. people), each with a probability from the distribution probs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>probs</strong> (<em>array</em>) – list of probabilities, should sum to 1</p></li>
+<li><p><strong>n</strong> (<em>int</em>) – number of samples to choose</p></li>
+<li><p><strong>unique</strong> (<em>bool</em>) – whether or not to ensure unique indices</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p><code class="docutils literal notranslate"><span class="pre">choose_w([0.2,</span> <span class="pre">0.5,</span> <span class="pre">0.1,</span> <span class="pre">0.1,</span> <span class="pre">0.1],</span> <span class="pre">2)</span></code> will choose 2 out of 5 people with nonequal probability.</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+<div id="tipue_search_content"></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="covasim.cruise_ship.html" class="btn btn-neutral float-right" title="covasim.cruise_ship package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tests.html" class="btn btn-neutral float-left" title="Run tests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Intellectual Ventures Management, LLC (IVM). All rights reserved
+
+    </p>
+  </div>
+<p>EMOD is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">Creative Commons
+    Attribution-Noncommercial-ShareAlike 4.0 License</a>.</p>
+<p>Send documentation feedback to <a href="mailto:feedback@idmod.org" target="_top">feedback@idmod.org</a>. If you have
+    questions, email <a href="mailto:support@idmod.org" target="_top">support@idmod.org</a>.</p>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+  
+<!-- Google analytics for IDM docs -->
+ 
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-87656833-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
